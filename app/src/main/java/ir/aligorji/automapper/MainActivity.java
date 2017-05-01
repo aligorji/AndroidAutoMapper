@@ -1,4 +1,4 @@
-package ir.hfj.automapper;
+package ir.aligorji.automapper;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -12,11 +12,11 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Random;
 
-import ir.hfj.automapper.holder.ParentHolder;
-import ir.hfj.automapper.holder.UserHolder;
-import ir.hfj.automapper.library.AutoMapper;
-import ir.hfj.automapper.model.ParentModel;
-import ir.hfj.automapper.model.UserModel;
+import ir.aligorji.automapper.holder.ParentHolder;
+import ir.aligorji.automapper.holder.UserHolder;
+import ir.aligorji.automapper.library.AutoMapper;
+import ir.aligorji.automapper.model.ParentModel;
+import ir.aligorji.automapper.model.UserModel;
 
 
 public class MainActivity extends AppCompatActivity

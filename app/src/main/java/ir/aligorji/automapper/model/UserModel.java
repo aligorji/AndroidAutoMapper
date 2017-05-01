@@ -1,9 +1,12 @@
-package ir.hfj.automapper.model;
+package ir.aligorji.automapper.model;
 
-public class ParentModel
+public class UserModel
 {
     public int id;
     public String name;
+    public String family;
+    public boolean gender;
+    public int price;
 
     public long fxxxxxxxxx1;
     public int fxxxxxxxxx2;
@@ -11,6 +14,5 @@ public class ParentModel
     public Void fxxxxxxxxx4;
     public float fxxxxxxxxx5;
 
-    public String bitmap;
-
+    public ParentModel parent;
 }

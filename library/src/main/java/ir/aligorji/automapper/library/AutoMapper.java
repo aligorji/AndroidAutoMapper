@@ -1,4 +1,4 @@
-package ir.hfj.automapper.library;
+package ir.aligorji.automapper.library;
 
 
 import android.support.annotation.NonNull;

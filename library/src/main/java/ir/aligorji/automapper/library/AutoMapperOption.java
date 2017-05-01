@@ -1,4 +1,4 @@
-package ir.hfj.automapper.library;
+package ir.aligorji.automapper.library;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

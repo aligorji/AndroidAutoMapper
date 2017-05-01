@@ -1,8 +1,8 @@
-package ir.hfj.automapper.holder;
+package ir.aligorji.automapper.holder;
 
 import android.graphics.Bitmap;
 
-import ir.hfj.automapper.library.AutoMapperOption;
+import ir.aligorji.automapper.library.AutoMapperOption;
 
 
 public class ParentHolder

@@ -1,4 +1,4 @@
-package ir.hfj.automapper.holder;
+package ir.aligorji.automapper.holder;
 
 
 public class UserHolder

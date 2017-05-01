@@ -1,4 +1,4 @@
-<manifest package="ir.hfj.automapper.library"
+<manifest package="ir.aligorji.automapper.library"
 		  xmlns:android="http://schemas.android.com/apk/res/android">
 
 	<application
