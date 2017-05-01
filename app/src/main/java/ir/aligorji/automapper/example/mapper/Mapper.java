@@ -1,12 +1,12 @@
-package ir.aligorji.automapper.mapper;
+package ir.aligorji.automapper.example.mapper;
 
 import android.support.annotation.NonNull;
 
-import ir.aligorji.automapper.holder.ParentHolder;
-import ir.aligorji.automapper.holder.UserHolder;
-import ir.aligorji.automapper.library.AutoMapper;
-import ir.aligorji.automapper.model.ParentModel;
-import ir.aligorji.automapper.model.UserModel;
+import ir.aligorji.automapper.example.holder.ParentHolder;
+import ir.aligorji.automapper.example.holder.UserHolder;
+import ir.aligorji.automapper.AutoMapper;
+import ir.aligorji.automapper.example.model.ParentModel;
+import ir.aligorji.automapper.example.model.UserModel;
 
 
 public final class Mapper

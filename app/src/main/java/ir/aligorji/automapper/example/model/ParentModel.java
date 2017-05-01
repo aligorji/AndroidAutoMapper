@@ -1,12 +1,9 @@
-package ir.aligorji.automapper.model;
+package ir.aligorji.automapper.example.model;
 
-public class UserModel
+public class ParentModel
 {
     public int id;
     public String name;
-    public String family;
-    public boolean gender;
-    public int price;
 
     public long fxxxxxxxxx1;
     public int fxxxxxxxxx2;
@@ -14,5 +11,6 @@ public class UserModel
     public Void fxxxxxxxxx4;
     public float fxxxxxxxxx5;
 
-    public ParentModel parent;
+    public String bitmap;
+
 }

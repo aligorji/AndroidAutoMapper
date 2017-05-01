@@ -1,10 +1,10 @@
-package ir.aligorji.automapper;
+package ir.aligorji.automapper.example;
 
 import android.app.Application;
 import android.util.Log;
 
-import ir.aligorji.automapper.mapper.Mapper;
-import ir.aligorji.automapper.model.UserModel;
+import ir.aligorji.automapper.example.mapper.Mapper;
+import ir.aligorji.automapper.example.model.UserModel;
 
 
 public class App extends Application
