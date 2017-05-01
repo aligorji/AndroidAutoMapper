@@ -9,7 +9,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 25
         versionCode 1
-        versionName "1.0.1"
+        versionName "1.0.2"
     }
     buildTypes {
         release {
@@ -22,4 +22,5 @@ android {
 dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile project(':library')
+    //compile 'com.github.aligorji:androidautomapper:1.0.1'
 }
