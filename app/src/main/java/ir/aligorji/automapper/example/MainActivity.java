@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity
         mm.add(model);
         mm.add(model);
 
-        List<UserHolder> userHolders = AutoMapper.mapList(mm, UserHolder.class);
+        //List<UserHolder> userHolders = AutoMapper.mapList(mm, UserHolder.class);
 
-        UserHolder holder2 = AutoMapper.map(model, holder);
+        //UserHolder holder2 = AutoMapper.map(model, holder);
 
-        holder.toString();
+        //holder.toString();
 
 
         //=========================================================
@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity
 
         for (int i = 1; i <= 18; i++)
         {
-            //log += "_" + countTest + "\t" + testMapperManual(countTest) + "\n";
-            log += "_" + countTest + "\t" + testMapper2(countTest) + "\n";
+            log += "_" + countTest + "\t" + testMapperManual(countTest) + "\n";
+            //log += "_" + countTest + "\t" + testMapper2(countTest) + "\n";
 
             countTest *= 2;
         }
@@ -158,6 +158,11 @@ public class MainActivity extends AppCompatActivity
 
                 destination.extra = source.id + source.name;
             }
+            @Override
+            public UserHolder onCreateInstance(@NonNull UserModel source)
+            {
+                return null;
+            }
         });
 
         AutoMapper.createMap(ParentModel.class, ParentHolder.class).using(new AutoMapper.Mapper<ParentModel, ParentHolder>()
@@ -176,6 +181,11 @@ public class MainActivity extends AppCompatActivity
                 destination.fxxxxxxxxx5 = source.fxxxxxxxxx5;
 
                 destination.bitmap = null;//source.bitmap;
+            }
+            @Override
+            public ParentHolder onCreateInstance(@NonNull ParentModel source)
+            {
+                return null;
             }
         });
 

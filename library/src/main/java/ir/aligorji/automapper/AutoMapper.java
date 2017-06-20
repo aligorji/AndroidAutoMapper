@@ -100,6 +100,13 @@ public final class AutoMapper
 
                 }
 
+                @Override
+                public TDes onCreateInstance(@NonNull TSrc source)
+                {
+                    //not call
+                    return null;
+                }
+
 
             };
 
@@ -187,16 +194,20 @@ public final class AutoMapper
 
         final T destinationObj;
 
-        try
+        /*try
         {
             destinationObj = destinationType.newInstance();
         }
         catch (Throwable e)
         {
             throw new RuntimeException("##### AutoMapper [newInstance of destination], " + e.getMessage());
-        }
+        }*/
 
-        return (T) mapByInstance(source, destinationObj, getConverter(source.getClass(), destinationType));
+        final Mapper converter = getConverter(source.getClass(), destinationType);
+
+        destinationObj = (T) converter.onCreateInstance(source);
+
+        return (T) mapByInstance(source, destinationObj, converter);
     }
 
     public static <T> T map(Object source, Object destination)
@@ -484,6 +495,8 @@ public final class AutoMapper
     {
 
         void onMap(@NonNull final TSrc source, @NonNull final TDes destination);
+
+        TDes onCreateInstance(@NonNull final TSrc source);
 
     }
 
