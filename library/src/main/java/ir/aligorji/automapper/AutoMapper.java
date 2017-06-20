@@ -245,14 +245,16 @@ public final class AutoMapper
 
         final T destinationObj;
 
-        try
+        /*try
         {
             destinationObj = destinationType.newInstance();
         }
         catch (Throwable e)
         {
             throw new RuntimeException("##### AutoMapper [newInstance of destination], " + e.getMessage());
-        }
+        }*/
+
+        destinationObj = converter.onCreateInstance(source);
 
         return mapByInstance(source, destinationObj, converter);
     }
